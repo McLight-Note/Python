@@ -31,8 +31,8 @@ class Talaba(Shaxs):
     
     def get_info(self):
         info = f"{self.ism} {self.familiya}"
-        info += f"{self.get_bosqich()}-bosqich. ID"
-        return get_info
+        info += f"{self.get_bosqich()} - bosqich. ID - {self.idraqam}"
+        return info
 
 class Manzil:
     def __init__(self, uy, kocha, tuman, viloyat):
@@ -48,3 +48,5 @@ class Manzil:
     
 talaba1_manzil = Manzil(12,'Olmazor','Oltinkol','Andijon')
 talaba1 = Talaba('Alijon', 'Valiyev','FF112233', 'NA0000012', talaba1_manzil, 2000)
+
+print(talaba1.get_info())
