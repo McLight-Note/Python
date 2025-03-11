@@ -14,9 +14,11 @@ def kopaytma(a,b):
     return a * b
 
 def boluv(a,b):
-    if y == 0:
+    if b == 0:
         print('Impossible to divide to "0"')
-    return a / b
+        return None
+    else:
+        return a / b
 
 while True:
     javob = input("Press '1' to add numbers;"
