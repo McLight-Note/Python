@@ -1,4 +1,4 @@
-# 2024.03.07
+# 2025.03.07
 # Mavzu: Polimorfizm
 # Muallif: Muhammadsodiq
 
@@ -8,11 +8,11 @@ class Shaxs:
         self.familiya = familiya
         self. passport = passport
         self.tyil = tyil
-    
+
     def get_info(self):
         info = f"{self.ism} {self.familiya}"
         info += f"Pasport: {self.passport}, {self.tyil}"
-        return get_info
+        return info
     
     def get_age(self, yil):
         return yil - self.tyil
