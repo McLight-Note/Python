@@ -2,6 +2,14 @@
 # Mavzu: Fayllar bilan ishlash
 # Muallif: Muhammadsodiq
 
-file = open('pi.text')
-PI = file.read
-print(PI)
+
+with open('pi.txt') as file:
+    pi = file.read()
+
+print(pi)
+
+pi = pi.rstrip()
+pi = pi.replace('\n', '')
+pi = float(pi)
+print(pi)
+print(type(pi)) 
