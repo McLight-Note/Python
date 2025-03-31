@@ -11,21 +11,22 @@ with open(faylname, 'r') as file:
 
 file1 = 'pi_million_digits.txt'
 with open(file1, 'r') as file:
-    pi_digits = file.read() 
-    if '122620' in pi_digits:
-        print('Bor ekan')
-    else:
-        print('Yoq ekan')
-
-with open(file1, 'r') as file:
     pi = file.read()
 
 pi = pi.rstrip()
-pi = pi.replace('\n', '')
-pi = pi.replace(' ', '')
+pi = pi.replace("\n", "")
+pi = pi.replace(" ", "")
 
-bd = "261220"
-print(bd in pi)
+bdate = "31122000"
+print(bdate in pi)
+
+pi = float(pi)
 
 with open(file1, 'wb') as file:
     pickle.dump(pi, file)
+
+fayl2 = 'info'
+with open(fayl2, 'w') as file:
+    file.write('Adbulloh Otamirzayev\n')
+    file.write('2006')
+

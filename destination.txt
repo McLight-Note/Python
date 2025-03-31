@@ -10,4 +10,3 @@
 1. Fayl ni ochish
 2. Fayl ga yozish
 3. Fayl ni o'zgartirish
-demak
