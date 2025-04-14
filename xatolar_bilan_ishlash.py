@@ -1,4 +1,4 @@
-# 2025.04.13
+# 2025.04.14
 # Mavzu: Xatolar bilan ishlash
 # Muallif: Muhammadsodiq
 
