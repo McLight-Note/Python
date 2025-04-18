@@ -18,3 +18,15 @@ def fibda_bormi(n):
         s = int(math.sqrt(x))
         return s * s == x
     return mukammal_kvadrat(5 * n * n + 4) or mukammal_kvadrat(5 * n * n - 4)
+
+def sum_list(a):
+    return sum(a)
+
+def reverse_string(s):
+    return s[::-1]
+
+def is_palindrome(word):
+    return word == word[::-1]
+
+def even_number_counter(a):
+    return len([n for n in a if n % 2 == 0])
