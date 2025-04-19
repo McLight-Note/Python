@@ -3,7 +3,7 @@
 # Muallif: Muhammadsodiq
 
 class Shaxs:
-    def __init__(self, ism, familiya, passport, tyil):
+    def __init__(self, ism, familiya, passport, tyil=0):
         self.ism = ism
         self.familiya = familiya
         self.passport = passport
@@ -18,7 +18,7 @@ class Shaxs:
         return yil - self.tyil
     
 class Talaba(Shaxs):
-    def __init__(self, ism, familiya, passport, tyil, idraqam, manzil):
+    def __init__(self, ism, familiya, passport, tyil, idraqam, manzil = None):
         super().__init__(ism, familiya, passport, tyil)
         self.idraqam = idraqam
         self.bosqich = 1
