@@ -20,7 +20,7 @@ print(vaqtHozir, vaqtKeyin)
 
 ramazon = dt.date(2026, 2, 17)
 farq = ramazon - bugun
-print(f'Ramazonga {farq} kunq oldi')
+print(f'Ramazonga {farq} kun qoldi')
 
 futbol = dt.datetime(2025, 4, 23, 23, 10, 00)
 farq1 = futbol - hozir
