@@ -1,48 +1,51 @@
-# 2025.04.15
+# 2025.05.27
+# Mavzu: Training the python
 # Muallif: Muhammadsodiq
 
+import math
 
+"""
+def frequeancy_counter(list):
+    freq = {}
+    for a in list:
+        if a in freq:
+            freq[a] += 1
+        else:
+            freq[a] = 1
+    return freq
 
-reg_people = {
+numbers = [1,1,1,2,2,2,2,3,3,3,3,3]
+print(frequeancy_counter(numbers))
 
-    "person1": "password1",
+def fibonacci(n):
+    sequence = []
+    a, b = 0, 1
+    for _ in range(n):
+        sequence.append(a)
+        a, b = b, a + b
+    return sequence
 
-    "person2": "password2",
+n = 10
+print(f"Fibonacci ketma-ketligi ({n} ta son):")
+print(fibonacci(n))
+"""
+"""
+a = int(input('>>'))
+for n in range(0, a+1):
+    print(n)
+"""
+'''
+a, b = 7, 8
+print(sum([a, b]))
 
-    "person3":"password3"
-
-}
-
-
-
-attempts_count = 0
-
-max_amount = 3
-
-
-
-while attempts_count < max_amount:
-
-    input_name = input("Enter name: ")
-
-    input_password = input("Enter password: ")
-
-
-
-    if input_name in reg_people and reg_people[input_name] == input_password:
-
-        print('Logged in!')
-
+print(a,b)
+z = a
+a = b
+b = z
+print(a, b)
+'''
+numbers = []
+while True:
+    numbers.append(input('>>>'))
+    if 'stop' in numbers:
         break
-
-    else:
-
-        attempts_count += 1
-
-    print(f"Bad name or password. Attempt {attempts_count} of {max_amount}")
-
-
-
-if attempts_count == max_amount:
-
-    print("Maximum login attempts reached. Try again later, bro!")
